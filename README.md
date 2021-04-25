@@ -1,9 +1,11 @@
 # Exercice REACT - Liste de films
 
+![main](https://github.com/JCX-DEV/Exercice_Movies/screenshots/app_general_view.png "Main view")
+
 ## UI et responsiveness
 
 ### **Enoncé :**
-- 1. Lister les films dans des cartes avec le titre en gras, la catégorie et une jauge type Youtube indiquant le ratio likes/dislikes. Les cartes doivent être côtes à côtes et responsive (lorsque la fenêtre se réduit, les cartes sautent à la ligne suivante)
+1. Lister les films dans des cartes avec le titre en gras, la catégorie et une jauge type Youtube indiquant le ratio likes/dislikes. Les cartes doivent être côtes à côtes et responsive (lorsque la fenêtre se réduit, les cartes sautent à la ligne suivante)
 
 ### **Réponse proposée :**
 - Le composant carte a été fait en composant réutilisable, principalement à partir de Material-UI.
@@ -14,18 +16,18 @@
 ## Interactions avec le store
 
 ### **Enoncé :**
-- 2. Ajouter un bouton dans les cartes permettant de supprimer celle-ci
-- 3. Ajouter un bouton toggle like/dislike
+2. Ajouter un bouton dans les cartes permettant de supprimer celle-ci
+3. Ajouter un bouton toggle like/dislike
 
 ### **Réponse proposée :**
-- Chaque carte disponse d'un bouton permettant de supprimer du store l'élément correspondant.
-- Ainsi qu'un bouton pour chaque action de like ou dislike permettant d'ajouter ou retirer son like ou son dislike. (Si une carte a déjà été likée, cliquer sur le dislike entraînera la suppression dans le store du précédent like). Le nombre total de likes/dislikes associé à l'élément sera également maintenu à jour dans le store au travers de ces actions.
+- Chaque carte dispose d'un bouton permettant de supprimer du store l'élément correspondant.
+- Ainsi qu'un bouton pour chaque action de like ou dislike permettant d'ajouter ou retirer son like ou son dislike. (Si une carte a déjà été likée, cliquer sur le dislike entraînera la suppression dans le store du précédent like). Le nombre total de likes/dislikes associé à l'élément sera également maintenu à jour dans le store au travers de ces actions. Le choix de l'utilisateur qui a déjà été enregistré est visuellement traduit par une couleur sur le bouton correspondant (bleue pour le like et rouge pour le dislike)
 
 ## Interactions avec l'UI
 
 ### **Enoncé :**
-- 4. Ajouter un filtre par catégorie (de type multiselect) en supposant qu'on ne les connaisse pas à l'avance (il faut donc les récupérer dynamiquement depuis les films). Si tous les films d'une catégorie sont supprimés, celle-ci ne doit plus appraître.
-- 5. Ajouter un système de pagination avec les fonctionnalités suivantes:
+4. Ajouter un filtre par catégorie (de type multiselect) en supposant qu'on ne les connaisse pas à l'avance (il faut donc les récupérer dynamiquement depuis les films). Si tous les films d'une catégorie sont supprimés, celle-ci ne doit plus appraître.
+5. Ajouter un système de pagination avec les fonctionnalités suivantes:
 -- Boutons précédent/suivant
 -- Choix du nombre d'élements affichés par page (4, 8 ou 12).
 
@@ -43,3 +45,14 @@ Pour le confort UI quelques éléments en plus :
 - Le nombre total de votes est affiché sous la jauge de like.
 - Un écran d'erreur apparaît pour indiquer qu'il n'y a aucune carte à afficher.
 - Un écran d'erreur apparaît pour indiquer que les dimensions de la fenêtre sont en-dessous des minima requis.
+
+## **Quelques captures**
+
+Deux catégories sélectionnées, largeur d'écran permettant d'afficher deux cartes par ligne :
+![multiselect](https://github.com/JCX-DEV/Exercice_Movies/screenshots/app_view_1.png "Multiselect")
+
+Deux catégories non disponibles après suppression des éléments, largeur d'écran permettant d'afficher trois cartes par ligne :
+![categories](https://github.com/JCX-DEV/Exercice_Movies/screenshots/app_view_2.png "Catégories dynamiques")
+
+Largeur d'écran permettant d'afficher une seule carte par ligne, header et footer visibles de façon permanente, la scrollbar n'affecte que la zone centrale :
+![responsive](https://github.com/JCX-DEV/Exercice_Movies/screenshots/app_view_3.png "Responsive")
