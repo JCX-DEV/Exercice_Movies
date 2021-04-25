@@ -1,6 +1,6 @@
 # Exercice REACT - Liste de films
 
-![main](https://github.com/JCX-DEV/Exercice_Movies/screenshots/app_general_view.png "Main view")
+![main](https://github.com/JCX-DEV/Exercice_Movies/blob/main/screenshots/app_general_view.png "Main view")
 
 ## UI et responsiveness
 
@@ -49,10 +49,13 @@ Pour le confort UI quelques éléments en plus :
 ## **Quelques captures**
 
 Deux catégories sélectionnées, largeur d'écran permettant d'afficher deux cartes par ligne :
-![multiselect](https://github.com/JCX-DEV/Exercice_Movies/screenshots/app_view_1.png "Multiselect")
+
+![multiselect](https://github.com/JCX-DEV/Exercice_Movies/blob/main/screenshots/app_view_1.png "Multiselect")
 
 Deux catégories non disponibles après suppression des éléments, largeur d'écran permettant d'afficher trois cartes par ligne :
-![categories](https://github.com/JCX-DEV/Exercice_Movies/screenshots/app_view_2.png "Catégories dynamiques")
+
+![categories](https://github.com/JCX-DEV/Exercice_Movies/blob/main/screenshots/app_view_2.png "Catégories dynamiques")
 
 Largeur d'écran permettant d'afficher une seule carte par ligne, header et footer visibles de façon permanente, la scrollbar n'affecte que la zone centrale :
-![responsive](https://github.com/JCX-DEV/Exercice_Movies/screenshots/app_view_3.png "Responsive")
+
+![responsive](https://github.com/JCX-DEV/Exercice_Movies/blob/main/screenshots/app_view_3.png "Responsive")
