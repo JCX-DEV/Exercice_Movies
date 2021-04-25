@@ -1,0 +1,1 @@
+export const PAGINATION_SIZES = [4, 8, 12];

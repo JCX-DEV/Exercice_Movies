@@ -1,0 +1,71 @@
+.app-responsive-error{
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.app-movies{
+  position: absolute;
+  height: 100vh;
+}
+
+.app-title{
+  font-weight: bold;
+  font-size: 40px;
+  margin: 10px;
+}
+
+.app-movies-header{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 150px;
+  padding: 0 20px;
+  box-shadow: 0 5px 5px #bdbdbd;
+  background-color: white;
+  z-index: 10;
+}
+
+.app-movies-content{
+  position: relative;
+  top: 150px;  
+  height: calc(100vh - 240px);
+  width: 100vw;
+  background-color: #f9f9f9;
+  overflow-y: scroll;
+}
+
+.app-movies-footer{
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #bdbdbd;
+  height: 50px;
+  padding: 20px;
+  width: 100vw;
+  background-color: white;
+  z-index: 10;
+}
+
+.pagination-block{
+  display: inline-block;
+}
+
+.pagination-total-elements{
+  color: rgba(0, 0, 0, 0.54);
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 390px),
+       screen and (max-height: 410px)
+{
+  .app-movies{
+    display: none;
+  }
+
+  .app-responsive-error{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+  }
+}
